@@ -9,7 +9,8 @@
 	Hello world!  
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P> The time on the server is ${serverTime}. </P>
 <p> 깃 허브 테스트</p>
+<p> 업로드 </p>
 </body>
 </html>
