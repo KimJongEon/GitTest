@@ -33,8 +33,12 @@ TEST
 
 555555555
 ㅁㄴㅇ리ㅓㅏㅟ머ㅏㄴ우러ㅣㅏㅜ
+<<<<<<< HEAD
 
 종언종언
 ㅁㄴㅇㅁㄴㅇ
+=======
+앙 기모띠
+>>>>>>> branch 'master' of https://github.com/KimJongEon/GitTest.git
 </body>
 </html>
