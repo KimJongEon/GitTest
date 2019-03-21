@@ -8,4 +8,6 @@ public interface CustomerService {
 	public ArrayList<CustomerVO> getList();
 	
 	public ArrayList<MemberVO> login(String id);
+
+	public int sign(MemberVO insert);
 }

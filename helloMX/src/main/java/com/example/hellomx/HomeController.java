@@ -27,6 +27,9 @@ import lombok.AllArgsConstructor;
 public class HomeController {
 	
    private CustomerService customerService;
+
+   
+  
    
    @RequestMapping(value = "/", method=RequestMethod.GET)
    public String home(Model model) {
@@ -62,11 +65,25 @@ public class HomeController {
 	  
 	   
    }
-//   @RequestMapping("sing.do")
-//   public String signup(Model model, @RequestParam String id ,@RequestParam String password) {
-//	   
-//   }
-//   
+   @RequestMapping("sign.do")
+   	@ResponseBody
+   public String sign(Model model, @RequestParam String id ,@RequestParam String password, @RequestParam String email, @RequestParam String name, @RequestParam String adress) {
+	   
+	   MemberVO insert = new MemberVO();
+	   
+	   insert.setUserid(id);
+	   insert.setPassword(password);
+	   insert.setEmail(email);
+	   insert.setName(name);
+	   insert.setAdress(adress);
+	    
+	   int suc = customerService.sign(insert);
+	  
+	
+	   return "signup";
+	   
+   }
+   
    
    
    @RequestMapping(value = "/signup", method=RequestMethod.GET)
@@ -74,6 +91,14 @@ public class HomeController {
 	   
 	   return "signup";
    }
+   
+   @RequestMapping(value = "/page", method=RequestMethod.GET)
+   public String menuPage(Model model) {
+	   
+	   return "page";
+   }
+   
+   
 
 		
 

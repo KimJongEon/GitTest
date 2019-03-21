@@ -10,4 +10,6 @@ public interface CustomerMapper {
 	public ArrayList<CustomerVO> getList();
 	
 	public ArrayList<MemberVO> login(String id);
+	
+	public int sign(MemberVO insert);
 }

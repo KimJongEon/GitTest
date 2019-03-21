@@ -22,4 +22,12 @@ public class CustomerServiceImplement implements CustomerService {
 		// TODO Auto-generated method stub
 		return mapper.login(id);
 	}
+
+	@Override
+	public int sign(MemberVO insert) {
+		// TODO Auto-generated method stub
+		return mapper.sign(insert);
+	}
+
+
 }

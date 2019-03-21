@@ -13,4 +13,7 @@
 		
 		</select>
 
+	<insert id="sign" parameterType="com.example.hellomx.domain.MemberVO">
+		insert into member values (#{userid},#{password},#{email},#{adress},#{name})
+	</insert>
 </mapper>

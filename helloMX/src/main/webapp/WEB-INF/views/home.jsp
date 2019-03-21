@@ -78,7 +78,7 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link js-scroll-trigger" >
+                        <a class="nav-link js-scroll-trigger" href="page">
                             Page
                         </a>
                     </li>
