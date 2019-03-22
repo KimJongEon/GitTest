@@ -98,6 +98,32 @@ public class HomeController {
 	   return "page";
    }
    
+   //각 기능 페이지 이동 Mapping
+   
+   @RequestMapping(value = "/hotel", method=RequestMethod.GET)
+   public String hotel(Model model) {
+	   
+	   return "service/hotel";
+   }
+   
+   @RequestMapping(value = "/hospital", method=RequestMethod.GET)
+   public String hospital(Model model) {
+	   
+	   return "service/hospital";
+   }
+   @RequestMapping(value = "/goodbye", method=RequestMethod.GET)
+   public String goodbye(Model model) {
+	   
+	   return "service/goodbye";
+   }
+   
+   @RequestMapping(value = "/goodbye2", method=RequestMethod.GET)
+   public String goodbye2(Model model) {
+	   
+	   return "service/goodbye2";
+   }
+   
+   
    
 
 		
