@@ -3,8 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta charset="utf-8">
  <link rel="stylesheet" href="assets/css/page/page.css">
+ 
 
 	<nav class="main-nav">메인의 페이지 들어올예정 네비게이션</nav>
 	
