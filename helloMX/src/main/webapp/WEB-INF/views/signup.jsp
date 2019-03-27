@@ -8,6 +8,7 @@
  <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
  
  <script src="assets/js/sign.js"></script>
+ 
 
 <form>
 <h2>회원가입</h2>
@@ -43,11 +44,14 @@
   
   <label style="width:50%">
     <p class="label-txt2">주소를 검색 해 주세요</p>
-    <input type="text" class="input" id="sample6_postcode" placeholder="주소">
-     <input type="text" class="input" id="sample6_address" placeholder="지번">   
-    <input type="text" class="input" id="sample6_extraAddress" placeholder="요약">
-    <input type="submit" class="button2" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-     
+    <input type="text" class="input" id="sample4_postcode" placeholder="우편번호">
+     <input type="text" id="sample4_roadAddress" placeholder="도로명주소">
+    <input type="text" id="sample4_jibunAddress" placeholder="지번주소">
+    <span id="guide" style="color:#999;display:none"></span>
+	<input type="text" id="sample4_detailAddress" placeholder="상세주소">
+	<input type="text" id="sample4_extraAddress" placeholder="참고항목">
+    <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+
   </label>
   </form>
 <br>

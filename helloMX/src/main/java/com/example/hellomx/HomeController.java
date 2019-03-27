@@ -55,6 +55,7 @@ public class HomeController {
 	         if(member.get(0).getPassword().equals(password)) {
 	            model.addAttribute("id",member.get(0).getUserid());
 	            session.setAttribute("id", member.get(0).getUserid());
+	            System.out.println(session.getAttribute("id"));
 	            return "success";
 	         }else {
 	            return "fail";
@@ -83,6 +84,18 @@ public class HomeController {
 	   return "signup";
 	   
    }
+   
+   @RequestMapping("logout.do")
+  	@ResponseBody
+  public String logout(Model model,HttpSession session){
+	if(session != null) {
+	   session.invalidate();
+		return "success";
+	}else {
+		return "know";
+	}
+ 
+  }
    
    
    

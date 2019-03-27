@@ -5,7 +5,7 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <script src="assets/js/login.js"></script>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <link rel="stylesheet" href="assets/css/login.css">
 <div class="wrapper fadeInDown">
   <div id="formContent">
@@ -22,12 +22,12 @@
       <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
       <button id ="login" class="fadeIn fourth" value="로그인" style=margin-bottom:20px;>로그인</button>
       <button class="fadeIn fourth" value="회원가입" style="margin-bottom:10px; width:200px; text-align: center;" >회원가입</button>
+      
     
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">비밀번호를 잊으셨나요?</a>
+      <a class="underlineHover" href="#">비밀번호를 잊으셨나요?</a>  
     </div>
-
   </div>
 </div>

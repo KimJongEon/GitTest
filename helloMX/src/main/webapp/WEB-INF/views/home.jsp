@@ -17,7 +17,7 @@
 <!-- </html> -->
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page session="true" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 
 <html>
@@ -84,9 +84,13 @@
                     </li>
                 </ul>
                 
+             <c:if test="${empty sessionScope.id}">
             <button class="button" id="login" style="vertical-align:middle;" onclick="login()">Sign in</button>
             <button class="button" id="signup" style="vertical-align:middle;" onclick="signup()">Sign up</button>
-            
+            </c:if>
+            <c:if test="${not empty sessionScope.id}">
+             <button class="button" id="logout" style="vertical-align:middle;" onclick="logout()">log out</button>
+            </c:if>
 
 
             </div>
@@ -167,10 +171,7 @@
                     <!-- Subheading -->
                     <p class="mb-5 ">
                         1000만 반려동물시대에 맞춘 최적화 플랫폼
-                        <c:forEach var="user" items="${id}">
-    <p>${user.userid}
-    <p>${user.password}
-</c:forEach>
+                        
                     </p>
 
                 </div>
@@ -563,7 +564,7 @@
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Global JS -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->

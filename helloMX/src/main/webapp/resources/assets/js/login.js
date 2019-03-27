@@ -6,6 +6,19 @@ function signup(){
 	location.href = "signup";
 }
 
+function logout(){
+	alert("로그아웃 되었습니다.");
+	$.ajax({
+		type : "POST",
+        dataType : 'text',
+        url : "logout.do",
+        success : function(data) {
+        	if(data=="success")
+        	 window.location.href = "/hellomx/"
+        }
+	});
+}
+
 
 $(document).ready(function () {
     $('#login').click(function() {
